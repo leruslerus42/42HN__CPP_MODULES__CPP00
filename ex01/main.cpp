@@ -6,7 +6,7 @@
 /*   By: rrajaobe <rrajaobe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/26 10:02:22 by rrajaobe          #+#    #+#             */
-/*   Updated: 2022/04/26 11:02:51 by rrajaobe         ###   ########.fr       */
+/*   Updated: 2022/04/27 08:44:19 by rrajaobe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,5 +33,7 @@ int main()
 	Phonebook instance;
 	Contact instance2;
 
-	ADD/SEARCH/EXIT
+	//ADD/SEARCH/EXIT
+
+	
 }
