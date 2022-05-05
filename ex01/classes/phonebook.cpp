@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   phonebook.cpp                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rrajaobe <rrajaobe@student.42.fr>          +#+  +:+       +#+        */
+/*   By: ruslan <ruslan@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/26 10:46:13 by rrajaobe          #+#    #+#             */
-/*   Updated: 2022/04/27 09:02:12 by rrajaobe         ###   ########.fr       */
+/*   Updated: 2022/05/05 03:20:15 by ruslan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,16 +20,14 @@ Phonebook::Phonebook(void) {
 	int		j = 0;
 	
 	cout << "Constructor called";
-	Phonebook *array = new Phonebook;
-	while (i < 5)
-	{
-		array[i] = "";
-		i++;
-	}
-	return ;
+
+	//Phonebook *array = new Phonebook;
+
+	//return ;
 };
 
 Phonebook::~Phonebook(void) {
 	cout << "Destructor called";
 	return ;
 };
+

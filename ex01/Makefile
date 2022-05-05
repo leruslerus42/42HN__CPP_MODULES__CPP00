@@ -3,15 +3,15 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: rrajaobe <rrajaobe@student.42.fr>          +#+  +:+       +#+         #
+#    By: ruslan <ruslan@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/04/26 10:01:19 by rrajaobe          #+#    #+#              #
-#    Updated: 2022/04/26 10:53:39 by rrajaobe         ###   ########.fr        #
+#    Updated: 2022/05/05 01:50:45 by ruslan           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 
-CC = clang++
+CC = c++ #clang+++
 
 CFLAGS = -Wall -Wextra -Werror -std=c++98
 
