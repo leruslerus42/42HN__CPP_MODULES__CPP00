@@ -3,30 +3,98 @@
 /*                                                        :::      ::::::::   */
 /*   phonebook.hpp                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ruslan <ruslan@student.42.fr>              +#+  +:+       +#+        */
+/*   By: rrajaobe <rrajaobe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/26 10:01:41 by rrajaobe          #+#    #+#             */
-/*   Updated: 2022/05/05 02:26:20 by ruslan           ###   ########.fr       */
+/*   Updated: 2022/07/10 00:22:49 by rrajaobe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef  PHONEBOOK_H
-# define PHONEBOOK_H
+#ifndef __PHONEBOOK__H__
+#define __PHONEBOOK__H__
 
-#include "./contact.hpp"
+#include <iostream>
+#include <unistd.h>
+#include <stdlib.h>
+#include <string>
+
+#include"../includes/contact.hpp"
 
 
-
-class Phonebook{
-	public:
+class Phonebook
+{
+private:
 	
-		Phonebook(void);
-		~Phonebook(void);
-		Contact Agenda[8];
+public:
+	Contact contacts[8];
+	
+	Phonebook();
+	~Phonebook();
+	
+	/*Add contact*/
+	void		add_contact(int i);
+	int			replace_contact();
+	std::string	add_contact_routine(std::string s);
 
-		void	add(Contact contact);
-		void	search(Contact contact);
+	/*Search for a contact*/
+	void	display_full_phonebook();
+	void	display_contact(Contact contact, int i);
+	void	printer(std::string s);
+	void	search_contact_by_index();
 };
 
 
-#endif //*******************PHONEBOOK CLASS******************/
+
+
+
+
+
+
+
+
+#endif  //!__PHONEBOOK__H__
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// #ifndef  PHONEBOOK_H
+// # define PHONEBOOK_H
+// # define TRUE=1
+
+// #include "contact.hpp"
+
+// class Phonebook{
+// 	private:
+// 		Contact	contacts[8];
+// 		void add(Phonebook phonebook);
+// 		void search(Phonebook phonebook);
+// 		void exit();
+	
+// 	public:
+// 	Phonebook(void);
+// 	~Phonebook(void);
+
+// 	private:
+// };
+
+
+// #endif //*******************PHONEBOOK CLASS******************/

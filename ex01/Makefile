@@ -3,17 +3,19 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: ruslan <ruslan@student.42.fr>              +#+  +:+       +#+         #
+#    By: rrajaobe <rrajaobe@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/04/26 10:01:19 by rrajaobe          #+#    #+#              #
-#    Updated: 2022/05/05 01:50:45 by ruslan           ###   ########.fr        #
+#    Updated: 2022/07/09 13:09:32 by rrajaobe         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 
-CC = c++ #clang+++
+CC = clang++
 
 CFLAGS = -Wall -Wextra -Werror -std=c++98
+
+SELF_WRN = -Wno-self-assign-field
 
 NAME = 	phonebook
 
@@ -26,7 +28,7 @@ OBJ = $(SRC: .c=.o)
 all: $(NAME)
 
 $(NAME) : $(OBJ)
-		$(CC) $(FLAGS) $(OBJ) -o $(NAME)
+		$(CC) $(FLAGS) $(SELF_WRN) $(OBJ) -o $(NAME)
 
 clean:
 		rm -f *.o

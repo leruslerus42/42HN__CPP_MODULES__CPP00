@@ -3,69 +3,44 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ruslan <ruslan@student.42.fr>              +#+  +:+       +#+        */
+/*   By: rrajaobe <rrajaobe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/26 10:02:22 by rrajaobe          #+#    #+#             */
-/*   Updated: 2022/05/05 03:20:47 by ruslan           ###   ########.fr       */
+/*   Updated: 2022/07/09 17:15:10 by rrajaobe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "./includes/phonebook.hpp"
-#include "./includes/contact.hpp"
-#include <iostream>
-
-
-/*
-	2 CLASSES
-	PHONEBOOK -> Array of Contacts, max 8
-				-> If stores the 9th, replace the old one with the new one
-
-	CONTACT -> Stands for a Phonebook contact
-	
-
-*/
-
-void initialize_agenda()
-{
-	
-}
-
-
 
 int main()
 {
-	Phonebook instance;
-	Contact instance2;
-	std::string argv;
-	bool	first = 0;
+	Phonebook	phonebook;
+	std::string	arg;
+	int			i;
 
-	//ADD/SEARCH/EXIT
-	while (1)
+	i = 0;
+	std::cout << "Welcome in the PHONEBOOK. Type ADD, SEARCH or EXIT to continue" << std::endl;
+	while (true)
 	{
-		std::getline(std::cin, argv);
-		if (argv == "ADD")
+		std::getline(std::cin, arg);
+		if (arg == "ADD")
 		{
-			if (first == 0)
-			{
-				initialize_agenda();
-				first = 1;
-			}
-			else
-			{
-				/*Replace oldest contact*/
-			}
-		else if (argv == "SEARCH")
-		{
-		
+			phonebook.add_contact(i);
+			if (i == 8)
+				i--;
+			i++;
 		}
-		else if (argv == "EXIT")
+		else if (arg == "SEARCH")
 		{
-
+			phonebook.display_full_phonebook();
+			phonebook.search_contact_by_index();
+				
 		}
+		else if (arg == "EXIT")
+			exit(0);
 		else
-			cout << "Wrong Input detected; please try another command or type exit to quit."
-		
+			std::cout << "Error! Insert a valid command!" << std::endl;
+		std::cin.clear();
 	}
-
-	
+	return (0);
 }
