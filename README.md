@@ -1,6 +1,18 @@
-# CPP00
+# CPP MODULES: CPP00
+The goal of the C++ modules 00 to 08 is to introduce the student to Object-Oriented Programming and the C++ programming language in general. 
 
-EX01: PHONEBOOK
+## TOPICS
+Namespaces, classes, member functions, stdio streams, initialization lists, static, const.
+
+
+## DESCRIPTIONS
+- ex00: Write a short C++ program, that takes a/multiple string/s from the command line and displays them IN ALL CAPS on the standard out.
+       (first intro to std::cin and std::cout)
+- ex01: Write a programm that behaves like a Phonebook where you can  ADD and SEARCH for a contact and EXIT the program.
+       (first intro to classes)
+
+
+## EX01: PHONEBOOK APPROACH
  
 1) PHONEBOOK
     - Create Array of Contacts(8)
@@ -10,11 +22,11 @@ EX01: PHONEBOOK
     - Each Contact must be instanciated as an instance of the Contact Class.
 
 3) METHODS
-    ADD
+    1) ADD
         - add new contact one field at a time
         - after all fields are done, add the contact to the phonebook.
         - no empty fields.
-    SEARCH
+    2) SEARCH
         - Display the Saved Contact as a list of 4 Columns: index, first name, last name, nickname
         - Each column 10 chars.
         - | separate the columns.
@@ -26,3 +38,13 @@ EX01: PHONEBOOK
         - Exit and the contacts are lost.
     OTHERS INPUTS ARE DISCARDED
          
+
+
+## RESULT 
+
+<img width="1174" alt="Screenshot 2022-11-01 at 04 40 39" src="https://user-images.githubusercontent.com/85942176/199155353-83a44bb7-06a0-4704-b556-1ffed04a82ee.png">
+
+
+
+
+
