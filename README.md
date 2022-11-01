@@ -46,9 +46,7 @@ The goal of the C++ modules 00 to 08 is to introduce the student to Object-Orien
 
 
 ## RESULT 
-
-<img width="1174" alt="Screenshot 2022-11-01 at 04 40 39" src="https://user-images.githubusercontent.com/85942176/199155353-83a44bb7-06a0-4704-b556-1ffed04a82ee.png">
-
+<img width="846" alt="Screenshot 2022-11-01 at 07 19 29" src="https://user-images.githubusercontent.com/85942176/199171470-cecc5a30-c614-4a54-aed8-42be5367d6a9.png">
 
 
 
