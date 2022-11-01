@@ -2,14 +2,19 @@
 The goal of the C++ modules 00 to 08 is to introduce the student to Object-Oriented Programming and the C++ programming language in general. 
 
 ## TOPICS
-Namespaces, classes, member functions, stdio streams, initialization lists, static, const.
+- Namespaces
+- Classes
+- Member functions
+- Stdio streams
+- Initialization Lists
+- Keyword "static"
+- Keyword "const"
 
 
 ## DESCRIPTIONS
 - ex00: Write a short C++ program, that takes a/multiple string/s from the command line and displays them IN ALL CAPS on the standard out.
        (first intro to std::cin and std::cout)
 - ex01: Write a programm that behaves like a Phonebook where you can  ADD and SEARCH for a contact and EXIT the program.
-       (first intro to classes)
 
 
 ## EX01: PHONEBOOK APPROACH
